@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bank Management System</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .container-fluid {
+      height: 90%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: 0px;
+    }
+  </style>
+</head>
+
+<body style="height: 100%;">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">Bank Management System</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          <li class="nav-item">
+            <!-- <a class="nav-link" href="#">Signup</a> -->
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-md-6 d-flex justify-content-center align-items-center">
+        <div class="p-4">
+          <h2>Welcome to our Bank Management System!</h2>
+          <p>
+
+            Our Bank Management System is a comprehensive platform designed to streamline banking operations and enhance
+            customer experience. With our user-friendly interface and robust features, you can manage your finances
+            efficiently and securely.</p>
+        </div>
+      </div>
+      <div class="col-md-5 d-flex justify-content-center align-items-center">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title text-center">Signup</h2>
+            <form>
+              <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" class="form-control" id="username" placeholder="Enter username">
+              </div>
+              <div class="form-group">
+                <label for="accountNumber">Account Number</label>
+                <input type="text" class="form-control" id="accountNumber" placeholder="Enter account number">
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Password">
+              </div>
+              <button type="submit" class="btn btn-primary btn-block" onclick="signup()">Signup</button>
+              <div class="mt-3 text-center">
+                <span>Already have an account? </span><a href="./login.html" class="btn btn-link">Login</a>
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script src="./signup.js"></script>
+</body>
+
+</html>

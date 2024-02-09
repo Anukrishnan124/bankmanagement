@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bank Management System</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+  body {
+      background-image: url('https://img.freepik.com/premium-vector/banking-service-background-bank-building-icon-made-with-currency-symbols-dollar-euro-yen-pound-icons_127544-803.jpg'); 
+      background-position: center;
+      height: 100%;
+      background-size: 1600px;
+      background-repeat: no-repeat;
+    }
+</style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">Bank Management System</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" onclick="logout()">Log out</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row" >
+      <div class="col-1">
+
+      </div>
+      <div class="col-4 bg-light m-5 p-5 border border-2 shadow-lg rounded">
+        <h1 class="mb-4">Deposit</h1>
+        <div class="form-group">
+          <label for="username">Deposit amount</label>
+          <input type="text" class="form-control" id="deposit" placeholder="Enter amount">
+        </div>
+        <!-- <div class="form-group">
+          <label for="username">Username</label>
+          <input type="text" class="form-control" id="username" placeholder="Enter username">
+        </div> -->
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" class="form-control" id="depositpass" placeholder="Password">
+        </div>
+        <button type="submit" class="btn btn-primary btn-block" onclick="depositt()">Deposit</button>
+
+
+      </div>
+      <div class="col-4 bg-light m-5 p-5 border border-2 shadow-lg rounded">
+        <h1 class="mb-4">Withdraw</h1>
+        <div class="form-group">
+          <label for="username">Withdraw amount</label>
+          <input type="text" class="form-control" id="withdraw" placeholder="Enter amount">
+        </div>
+        <!-- <div class="form-group">
+          <label for="username">Username</label>
+          <input type="text" class="form-control" id="usernamee" placeholder="Enter username">
+        </div> -->
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" class="form-control" id="withdrawpass" placeholder="Password">
+        </div>
+        <button type="submit" class="btn btn-primary btn-block" onclick="withdraw()">Withdraw</button>
+
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-3"></div>
+      <div class="col-5 bg-light border border-2 rounded shadow-lg m-3 p-3 " >
+        <div >
+          <label>Account balance :  <div id="balance"></div></label>
+         
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <script src="./home.js"></script>
+
+</body>
+
+</html>
